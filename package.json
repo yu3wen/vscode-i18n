@@ -1,0 +1,72 @@
+{
+  "name": "side",
+  "displayName": "side",
+  "description": "side",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:side.helloWorld"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "side.helloWorld",
+        "title": "%extension.sayHello.title%"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/lodash": "^4.14.177",
+    "@types/mkdirp": "^1.0.2",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^14.17.0",
+    "@types/rimraf": "^3.0.2",
+    "@types/vscode": "^1.55.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "@vscode/test-electron": "^1.6.2",
+    "del": "^6.0.0",
+    "eslint": "^7.32.0",
+    "event-stream": "^4.0.1",
+    "glob": "^7.1.7",
+    "gulp": "^4.0.2",
+    "gulp-filter": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
+    "mocha": "^9.1.1",
+    "run-sequence": "^2.2.1",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.3",
+    "vsce": "^1.96.1",
+    "vscode-nls-dev": "^3.3.2"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/i18n": "^0.13.2",
+    "@types/iconv-lite": "0.0.1",
+    "handlebars": "^4.7.7",
+    "i18n": "^0.13.4",
+    "iconv-lite": "^0.6.3",
+    "lodash": "^4.17.21",
+    "mkdirp": "^0.5.5",
+    "rimraf": "^3.0.2",
+    "run-sequence": "^2.2.1",
+    "vsce": "^2.6.4",
+    "vscode-nls": "^3.2.5"
+  }
+}
