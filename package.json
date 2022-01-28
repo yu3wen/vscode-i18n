@@ -1,7 +1,7 @@
 {
-  "name": "side",
-  "displayName": "side",
-  "description": "side",
+  "name": "tt",
+  "displayName": "tt",
+  "description": "a",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.63.0"
@@ -10,24 +10,16 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:side.helloWorld"
+    "onCommand:tt.helloWorld"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "side.helloWorld",
+        "command": "tt.helloWorld",
         "title": "%extension.sayHello.title%"
       }
     ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
     "@types/glob": "^7.1.4",
