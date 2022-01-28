@@ -1,0 +1,9 @@
+{
+	"messages": [
+		"Hello World"
+	],
+	"keys": [
+		"sayHello.text"
+	],
+	"filePath": "extension"
+}
